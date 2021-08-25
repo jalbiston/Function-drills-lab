@@ -58,8 +58,18 @@ console.log(sum);
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-function nameCheck(name)
+function nameCheck(name) {
+  if (name === "Steven") {
+    return "What is up Steven?";
+  } else if (name === "Bryan") {
+    return "Hey Bryan!";
+  } else {
+    return `Cool name, ${name}`;
+  }
+}
 
+let nameGreeting = nameCheck("Jake");
+console.log(nameGreeting);
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
@@ -70,8 +80,20 @@ function nameCheck(name)
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+function faveColorFinder(color) {
+  if (color === "red") {
+    return "Red is a Great Color";
+  } else if (color === "green") {
+    return "Green is a solid favorite color";
+  } else if (color === "black") {
+    return "So Trendy";
+  } else {
+    return "You need to evaluate your color choice";
+  }
+}
 
+let colorRating = faveColorFinder("black");
+console.log(colorRating);
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
 /*
