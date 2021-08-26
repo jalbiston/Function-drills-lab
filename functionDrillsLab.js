@@ -96,14 +96,20 @@ let colorRating = faveColorFinder("black");
 console.log(colorRating);
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
+
 /*
   Create a function called printALlNames that takes in a single argument (an array of names).
   Using a for loop, iterate over that array and console log each name.
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+function printAllnames(namesArr) {
+  for (let i = 0; i < namesArr.length; i++) {
+    console.log(namesArr[i]);
+  }
+}
 
+printAllnames(namesArr);
 ////////////////// PROBLEM 8 ////////////////////
 /*
   Create a function called thatsOdd that takes in a single argument (a number).
@@ -112,8 +118,15 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
-
+function thatsOdd(num1) {
+  if (num1 % 2 === 0) {
+    return "That's not odd!";
+  } else {
+    return "That is odd indeed!";
+  }
+}
+let oddChecker = thatsOdd(5);
+console.log(oddChecker);
 ////////////////// PROBLEM 9 ////////////////////
 let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
 /* 
@@ -125,7 +138,9 @@ let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+function bigOrSmall(arr){
+  let answers = []
+}
 
 ////////////////// PROBLEM 10 ////////////////////
 let contestants = [
